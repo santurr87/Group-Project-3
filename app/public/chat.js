@@ -42,19 +42,24 @@
         };
         $('.send_message').click(function (e) {
             return sendMessage(getMessageText());
+            var newMessage = $('.message-input').val().trim();
+            sendMessage(newMessage);
         });
         $('.message_input').keyup(function (e) {
             if (e.which === 13) {
                 return sendMessage(getMessageText());
             }
         });
-        sendMessage('Hello Philip! :)');
-        setTimeout(function () {
-            return sendMessage('Hi Sandy! How are you?');
-        }, 1000);
-        return setTimeout(function () {
-            return sendMessage("I'm fine, thank you!");
-        }, 2000);
+        // sendMessage('.message_input');
+      
+
+
+        // setTimeout(function () {
+        //     return sendMessage('Hi Sandy! How are you?');
+        // }, 1000);
+        // return setTimeout(function () {
+        //     return sendMessage("I'm fine, thank you!");
+        // }, 2000);
     });
 }.call(this));
 

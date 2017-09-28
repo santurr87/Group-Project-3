@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 $("#search").on('click',function(){
 
-event.preventDefault()
+event.preventDefault();
 
 $("#gifbox").css("visibility", "visible");
 $("#gif-choice").css("visibility", "visible");
@@ -33,6 +33,9 @@ $.ajax({
 
 
 	console.log(response);
+
+	console.log(response.data[0].images.fixed_height.url);
+
 	var results1 = response.data[0];
 	var results2 = response.data[1];
 	var results3 = response.data[2];
@@ -148,7 +151,7 @@ $(document).on("click", ".gif-images",function(){
   	 console.log(usersInfo.zip);
   	 console.log(usersInfo.sex);
   	 console.log(usersInfo.age);
-  };
+  }
 
 	$("#clear").on("click",function(){
 		$("#gifbox").html("");
@@ -170,15 +173,15 @@ $(document).on("click", ".gif-images",function(){
       user_age: age,
       user_zip: zip,
       user_gender: sex
-    }
+    };
 
     $.post("/api/new", user, function(data) {
-      console.log(data)
-    })
+      console.log(data);
+    });
 
 		activateFirebase();
-		location.href = location.href.load("chat.html");
-	})
+		window.location.href ="chat.html";
+	});
 
 
 
