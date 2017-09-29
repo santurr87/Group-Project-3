@@ -23,6 +23,19 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory to be served
 app.use(express.static("app/public"));
 
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+  
+io.on('connection', function (socket) {
+  socket.broadcast.emit('newUser', 'New User Joined, Say Hi :D');
+  socket.on('setUser', function (username) {
+    console.log(username); //here you have your user name
+  });
+  socket.on('chatMessage', function (msg) {
+    io.emit('chatMessage', msg);
+  });
+});
+
 // Routes
 // =============================================================
 require("./app/routes/api-routes.js")(app);

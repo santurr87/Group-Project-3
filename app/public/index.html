@@ -4,7 +4,11 @@
 
   <head>
 
-
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amaranth|Ceviche+One|Fugaz+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!--end-->
 
     <meta charset="UTF-8">
 
@@ -14,7 +18,7 @@
 
 
 
-    <title>GifMatch</title>
+    <title>Giphtd</title>
 
 	<link rel="icon" type="img" href="mahshid.png">
 
@@ -48,7 +52,7 @@
 
     <nav  id="top">
 
-        	<div class="animated fadeInLeft">GifMatch</div>
+        	<div class="animated fadeInLeft">Giphtd</div>
 
     </nav>
 
@@ -60,102 +64,51 @@
 	<form class="form-container" action="chat.html">
 
 
-	 	<div class="form-group">
-	 		 <h1 class="animated fadeInDown"> Find your match!&nbsp;<span class="glyphicon glyphicon-heart"></span></h1><br>
-	   		 <label for="userName" class="animated fadeInLeft">User Name</label>
-	   		 <input type="text" class="form-control" id="userName" placeholder="userName" class="form-control" required>
-	  	</div>
+    <div class="form-group">
+      <h1  id = "tex" class="animated fadeInDown"> Find your match today!
+      </div>
 
-		<div class="form-group">
-	   		 <label for="location" class="animated fadeInLeft">Zip Code</label>
-	   		 <input type="text" class="form-control" id="location" placeholder="location" class="form-control" required>
-	  	</div>
+      <div>
+      <label class = "myform" for="userName" class="animated fadeInLeft">User Name</label>
+      <input type="text" class="form-control" id="userName" placeholder="userName" class="form-control" required>
+    </div>
 
-	 	<div class="form-group">
-	   		 <label for="gif" class="animated fadeInLeft">Choose your Gif</label>
-	   		 <input type="text" class="form-control" id="gif" placeholder="Choose your Gif" class="form-control" required>
+    <div class="form-group">
+      <label  class = "myform" for="location" class="animated fadeInLeft">Zip Code</label>
+      <input type="text" class="form-control" id="location" placeholder="location" class="form-control" required>
+    </div>
 
-
-
-	   		 <button type="search" class="btn btn-default animated fadeInUp" id="search" >Choose gif</button>
-	    	 <button type="clear" class="btn btn-default animated fadeInUp" id="clear">Clear</button>
-	  	</div>
-
-		<div class="form-group" id="age-div">
-	   		 <label for="age" class="animated fadeInLeft">Age</label>
-	   		 <input type="text" class="form-control" id="age" placeholder="age" class="form-control" required>
-		</div>
-
-		<div class="form-group" id="chap">
-	   		 <label for="gender" class="animated fadeInLeft">Gender</label>
-	   		 <input type="text" class="form-control" id="gender" placeholder="gender" required>
-
-	 	</div>
-
-	 	 <a href="chat.html" target="_self"><button type="submit" class="btn btn-default animated fadeInUp" id="submit-btn">Submit</button></a>
-
-	 	</div>
+    <div class="form-group">
+      <label  class = "myform" for="gif" class="animated fadeInLeft">Choose your Gif</label>
+      <input type="text" class="form-control" id="gif" placeholder="Choose your Gif" class="form-control" required>
 
 
-	</form>
+
+      <button type="search" class="btn btn-default animated fadeInUp" id="search">Choose Gif</button>
+      <button type="clear" class="btn btn-default animated fadeInUp" id="clear">Clear</button>
+    </div>
+
+    <div class="form-group" id="age-div">
+      <label  class = "myform" for="age" class="animated fadeInLeft">Age</label>
+      <input type="text" class="form-control" id="age" placeholder="age" class="form-control" required>
+    </div>
+
+    <div class="form-group" id="chap">
+      <label class = "myform" for="gender" class="animated fadeInLeft">Gender</label>
+      <input type="text" class="form-control" id="gender" placeholder="gender" required>
+
+    </div>
+
+    <a href="chat.html" target="_self"><button type="submit" class="btn btn-default animated fadeInUp" id="submit-btn">Submit</button></a>
+
+    </div>
+
+
+  </form>
 
 	<div id="gif-choice" style="visibility: hidden"></div>
 
-	<!-- <footer -->
 
-	<div class="footer ">
-
-		<i class="fa fa-heart-o  animated fadeInLeft fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated bounce fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInUp fa-1x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-3x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInUp fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-2x " aria-hidden="true"></i>
-	    <i class="fa fa-heartbeat animated fadeInDown fa-2x fa-spin" aria-hidden="true" ></i>
-		<i class="fa fa-heart-o  animated fadeInUp  fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInUp fa-1x fa-spin" aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInUp fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-1x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInDown fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-3x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInDown fa-2x fa-spin" aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated bounce fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInUp fa-1x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInUp fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInDown fa-1x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated bounce fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-3x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInUp fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInLeft fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInUp fa-1x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInUp fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated bounce fa-1x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInDown fa-2x fa-spin" aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInLeftfa-2x" aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInDown fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-3x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInDown fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated bounce fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInUp fa-1x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInUp fa-2x fa-spin" aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInDown fa-1x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated bounce fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-3x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o animated fadeInUp fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInDown fa-2x fa-spin" aria-hidden="true"></i>
-		
-		<i class="fa fa-heart-o animated fadeInUp fa-1x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  fa-2x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated fadeInDown fa-1x " aria-hidden="true"></i>
-		<i class="fa fa-heart-o  animated bounce fa-2x " aria-hidden="true"></i>
-		
-
-	</div>
 
 	<!-- link -->
 
@@ -166,6 +119,6 @@
 	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="homejava.js"></script>
-	
+
   </body>
 </html>
